@@ -1,16 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <h1 className='bg-blue-500'>React Router</h1>
-    </>
-  )
+import { useState } from "react";
+import SideBar from "./components/Sidebar/SideBar"
+export default function App() {
+	const [sidebarOpen, setSidebarOpen] = useState(true);
+	function handleClick() {
+		setSidebarOpen((oldValue) => !oldValue);
+	}
+	return (
+		<div>
+			<aside className="fixed">
+				<SideBar sidebarOpen={sidebarOpen} handleClick={handleClick} />
+			</aside>
+			<main>
+				{/* <Main /> */}
+			</main>
+		</div>
+	)
 }
 
-export default App
