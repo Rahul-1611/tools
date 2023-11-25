@@ -1,0 +1,5 @@
+ https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example
+ 'Example'
+ https://goqr.me/api/
+
+google charts api - free n unlimited

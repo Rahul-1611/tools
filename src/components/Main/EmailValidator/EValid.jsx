@@ -1,6 +1,6 @@
-import EmailValidation from "emailvalid";
 import { useState } from "react";
 import Result from "./Result";
+import EmailValidation from "emailvalid";
 export default function EValid() {
     const ev = new EmailValidation();
     const [ans, setAns] = useState({
@@ -34,7 +34,7 @@ export default function EValid() {
         <div className="w-3/5">
             <form onSubmit={handleSubmit}>
                 <div className="border border-orange-900 rounded-full bg-background min-w-[15rem] h-12 p-1 flex justify-between items-center text-primary">
-                    <input maxLength='80' type="text" name="email" placeholder="example@xyz.com" className="bg-transparent focus:outline-none autofill:bg-background w-full mx-3 leading-4 placeholder:text-muted-foreground" />
+                    <input maxLength='80' type="text" placeholder="example@xyz.com" className="bg-transparent autofill:bg-background w-full mx-3 leading-4 placeholder:text-muted-foreground" />
                     <button type="submit" className="text-xs hover:text-sm h-full rounded-full w-24 bg-orange-700">Submit</button>
                 </div>
             </form>
