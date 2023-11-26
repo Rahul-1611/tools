@@ -3,7 +3,7 @@ import { LiaCheckCircle } from "react-icons/lia";
 export const Result = ({ email, valid, freemail, disposable, typo }) => {
     return (
         <div className="text-primary border-4 border-orange-700 rounded-2xl mt-5">
-            <p className="text-center py-3 border-b-4 border-orange-700"> {email} is a
+            <p className="text-center py-3 border-b-4 border-orange-700"> '{email}' is a
                 {valid ? <span className="text-green-900 bg-green-500 px-2 py-1 rounded-md mx-1">Valid</span>
                     : <span className="text-red-700 bg-red-300 px-2 py-1 rounded-md mx-1">Invalid</span>}
                 email.
